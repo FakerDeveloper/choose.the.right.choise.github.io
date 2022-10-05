@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>مرحلة التحقق</title>
+<link rel="icon" href="logo.png"/> 
+
+
+  <style>
+@font-face {
+    font-family: 'shahab';
+    src: url('​​Shahab-Regular.woff2') format('woff2');
+  }
+@font-face {
+    font-family: 'mas';
+    src: url('​​Almaseer.woff2') format('woff2');
+  }
+    ::selection {
+      text-shadow: 3px 3px 6px;
+    }
+    body {
+      background-image: linear-gradient(to bottom right, #eaffff, #d5f4ff, #aadfff);
+      background-attachment: fixed;
+      direction: rtl;
+
+    }
+    br {
+      font-size: 0px;
+    }
+    .all {
+      font-family: shahab;
+      text-align: center;
+      color: #00081d;
+    }
+    im {
+      height: 64px;
+      width: 60px;
+      
+    }
+    button {
+      border: none;
+      background-color: transparent;
+    }
+    p {
+      font-family: mas;
+      font-size: 20px;
+    }
+
+    #loader2 {
+      background-color: transparent;
+      border-color: transparent;
+      box-shadow: 3px 3px 3px;
+      border-radius: 10%;
+      padding-left: 7px;
+      padding-right: 7px;
+    }
+
+    .rotate {
+      animation: rotation 0.35s infinite linear;
+      pointer-events: none;
+    }
+
+@keyframes rotation {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .rotate3 {
+      animation: rotation 0.35s infinite linear;
+      pointer-events: none;
+    }
+
+@keyframes rotation {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .rotate2 {
+      animation: rotation 0.35s infinite linear;
+      pointer-events: none;
+    }
+
+@keyframes rotation {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .img {
+      height: 40px;
+      width: 40px;
+      text-align: left;
+      box-shadow: 3px 3px 3px;
+      pointer-events: none;
+      text-align: left;
+    }
+
+    #img {
+      pointer-events: none;
+height: 68px;
+      width: 64px;
+    }
+
+ #img1 {
+      pointer-events: none;
+      width: 64px;
+      height:64px;
+    }
+
+
+    .ltr {
+      direction: ltr;
+
+    }
+
+  </style>
+
+  <script>
+    function load(element) {
+      document.getElementById('loader').innerHTML = document.getElementById('div').innerHTML;
+      document.getElementById('loader').style.border = "0px"; document.getElementById('loader').style.backgroundColor = "transparent";
+      document.getElementById('loader').disabled = "true";
+    }
+    function load3(element) {
+      document.getElementById('loader3').innerHTML = document.getElementById('div3').innerHTML;
+
+      document.getElementById('loader3').style.border = "0px"; document.getElementById('loader3').style.backgroundColor = "transparent";
+      document.getElementById('loader3').disabled = "true";
+    }
+
+    function load2(element) {
+
+      document.getElementById('loader2').style.boxShadow = "0px 0px 0px"; document.getElementById('loader2').innerHTML = document.getElementById('div2').innerHTML;
+
+      document.getElementById('loader2').style.border = "0px"; document.getElementById('loader2').style.backgroundColor = "transparent";
+      document.getElementById('loader2').disabled = "true";
+    }
+
+  </script>
+
+
+
+</head>
+<body>
+  <!-- div-all -->
+  <div class="all">
+    <br>
+    <br>
+    <!-- h4 -->
+    <h4>في البداية.. دعنا نسألك سؤالًا بسيطًا لكي نعرف هل اللعبة ملائمة لك أم لا</h4>
+    <!-- h4; -->
+    <br>
+    <br>
+    <!-- p -->
+    <p>
+      السؤال هو:
+
+      <br>
+      هل أنت
+      <span style="color:green; font-family: mas;">
+        ذكي؟
+      </span>
+    </p>
+    <!-- p; -->
+
+    <br>
+    <!-- true img -->
+    <a href="​checking success, stage1.html">
+      <button id="loader" onclick="load()">
+        <img src="​​True.png" alt="!نعم ، أنا ذكي" id="img">
+      </button></a>
+    <!-- true img;
+    false img-->
+    <a href="​checking failed.html">
+      <button id="loader3" onclick="load3()">
+
+        <img src="​​False.png" alt="!لا، أنا غبي" id="img"></button></a>
+    <!-- false img; -->
+  </div>
+  <!-- div-all; -->
+  <br>
+  <br>
+  <br>
+  <!-- back img -->
+  <div class="ltr">
+    <a href="​index.html">
+      <button id="loader2" onclick="load2()">
+        <img src="​​Back.png" alt="Back" id="img1">
+      </button></a>
+  </div>
+  <!-- back img; -->
+  <!-- loader -->
+  <div id="div" style="display:none;">
+    <img src="​​loader.png" alt=""
+    width="45px" height="45px" class="rotate" style="padding-bottom:10px; padding-top:10px; padding-left:10px; padding-right:10px;">
+  </div>
+  <!-- loader; -->
+  <!-- loader3 -->
+  <div id="div3" style="display:none;">
+    <img src="​​loader3.png" alt=""
+    width="45px" height="45px" class="rotate3" style="padding-bottom:10px; padding-top:10px; padding-left:10px; padding-right:10px;">
+  </div>
+
+  <!-- loader3; -->
+  <!-- loader2 -->
+  <div id="div2" style="display:none; direction:ltr;">
+    <img src="​​loader2.png" alt="" width="45px" height="45px" class="rotate2" style=" padding-left:10px ; padding-right:10px; padding-bottom:10px; padding-top:10px;">
+  </div>
+  <!-- loader2; -->
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+
+
+
+</body>
+</html>

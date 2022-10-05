@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>البداية</title>
+<link rel="icon" href="logo.png"/> 
+  <style type="text/css">
+@font-face {
+    font-family: 'mas';
+    src: url('​Almaseer.woff2') format('woff2');
+  }
+@font-face {
+    font-family: 'sg';
+    src: url('​Sg.woff2') format('woff2');
+  }
+    ::selection {
+      text-shadow: 3px 3px 6px;
+    }
+    * {
+      text-align: center;
+      font-family: mas;
+      color: #1e243c;
+      text-shadow: 0.5px 0.5px 0.5px gray;
+direction:rtl;
+    }
+    br {
+      font-size: 0px;
+    }
+    body {
+      background-image: linear-gradient(to bottom right, #eaffea, #eaffff);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      border-image: linear-gradient(to bottom left, red, blue);
+    }
+    span0 {
+      color: green;
+
+    }
+    h3 {
+      color:;
+
+      font-size: 23px;
+    }
+    button {
+      font-size: 20px;
+      border-radius: 4px;
+      padding-right: 15px;
+      padding-left: 15px;
+      padding-top: 10px;
+      padding-bottom: 0px;
+      border-width: 5px;
+      border-style: ridge groove;
+      border-color: green;
+      font-family: sg;
+      box-shadow: 2px 2px 3px green;
+    }
+    .size {
+      font-size: 19px;
+    }
+
+
+    .rotate {
+      animation: rotation 0.35s infinite linear;
+    }
+
+@keyframes rotation {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+
+<script>
+  function load(element) {
+   document.getElementById ('loader').style.boxShadow ="0px 0px 0px";
+document.getElementById('loader').innerHTML = document.getElementById('div').innerHTML;
+    document.getElementById('loader').style.border = "0px";
+    document.getElementById('loader').style.backgroundColor = "transparent";
+    document.getElementById('loader').disabled = "true";
+  }
+
+</script>
+
+</head>
+<body>
+  <br>
+  <br>
+<!-- h3 -->
+  <h3>
+    <span>مرحبًا بك في لعبة اختر الخيار
+      <span style="color:green;">
+        الصحيح
+      </span>
+       
+  </h3>
+<!-- h3; -->
+  <br>
+<!-- p -->
+  <p class="size">
+    طريقة اللعب:
+    
+    <br
+    <span1>
+    ستأتيك قصص ويجب عليك اختيار الخيار
+    <span style="color:green;">
+      الصحيح
+    </span>
+    للفوز!
+    
+  </span1>
+</p>
+<!-- p; -->
+<br>
+<!-- loader -->
+<a href="checking stage.html">
+  <button id="loader" onclick="load()">ابدأ</button>
+</a>
+<div id="div" style="display:none;">
+  <img src="​​loader.png" alt="" height="45px" width="45px" class="rotate">
+</div>
+<!-- loader -->
+
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="logo.png"/> 
+  <title>فشل التحقق!</title>
+  <style>
+@font-face {
+    font-family: 'shahab';
+    src: url('​Shahab-Regular.woff2') format('woff2');
+  }
+    br {
+      font-size: 0px;
+    }
+
+    ::selection {
+      text-shadow: 3px 3px 6px;
+    }
+    .img {
+      height: 200px;
+      width: 200px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 3px 3px 3px;
+pointer-events:none;
+    }
+    body {
+      background-image: linear-gradient(to bottom left, #ff808a, #ffbfbf, #ff9595);
+      background-attachment: fixed;
+
+    }
+    .span {
+      text-align: center;
+      font-family: shahab;
+      color:;
+      text-shadow: 1px 1px 3px gray;
+direction:rtl;
+    }
+
+   #loader2 {
+      background-color: transparent;
+      border-color:transparent;
+box-shadow:3px 3px 3px ;
+border-radius:10%;
+    }
+    #img {
+      height: 64px;
+      width: 64px;
+      text-align: left;
+pointer-events:none;
+
+    }
+
+.rotate2 {
+      animation: rotation 0.35s infinite linear;
+text-align:left;
+}
+
+@keyframes rotation {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+  </style>
+
+<script>
+function load2(element) {
+       document.getElementById('loader2').style.boxShadow ="none";
+ document.getElementById('loader2').innerHTML = document.getElementById('div2').innerHTML;
+        document.getElementById('loader2').style.border = "0px"; document.getElementById('loader2').style.backgroundColor = "transparent";
+        document.getElementById('loader2').disabled = "true";
+      }
+
+  </script>
+
+
+</head>
+<body>
+<!-- eyebrow img -->
+  <img src="​Eyebrow.gif" alt="🤨" class="img">
+<!-- eyebrow img; -->
+  <br> <br>
+<!-- span -->
+  <div class="span">
+    <span> هممممممم🤔🤔
+<br>
+ أعتقد أنه لا يمكنك اللعب، أو بالأصح لا يمكنك اللعب!! لأنه لا يوجد مكان لأمثالك هنا!</span>
+  </div>
+<!-- span; -->
+<!-- loader2 -->
+ <div id="div2" style="display:none;">
+      <img src="​loader2.png" alt="" height="45px" width="45px" class="rotate2" style="padding-right:10px; padding-left:10px; padding-top: 10px; padding-bottom: 10px;">
+    </div>
+<!-- loader2; -->
+ <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+<!-- back img -->
+  <a href="​checking stage.html">
+    <button id="loader2" onclick="load2()">
+      <img src="​Back.png" alt="Back" id="img">
+    </button></a>
+  <!-- back img; -->
+</body>
+</html>
