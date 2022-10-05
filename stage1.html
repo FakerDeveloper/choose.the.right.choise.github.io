@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="icon" href="logo.png"/>
+<title>نجح التحقق! - المرحلة الأولى</title> 
+<style>
+@font-face{
+font-family:'sg';
+src:url('  Sg.woff2') format('woff2');
+}
+
+@font-face{
+font-family:'Mar';
+src:url('  Almarai.woff2') format('woff2');
+}
+
+@font-face{
+font-family:'cas';
+src:url('  Castile.woff2') format('woff2');
+}
+
+@font-face{
+font-family:'con';
+src:url('  Condensed.woff2') format('woff2');
+}
+
+@font-face{
+font-family:'gen';
+src:url('  Gen.woff2') format('woff2');
+}
+
+body{
+background-image:linear-gradient(to bottom right, #eaffff, #d5fff4);
+background-attachment:fixed;
+}
+
+::selection{
+text-shadow:0px 0px 15px ;
+border:solid 1px black ;
+}
+
+.c{
+text-align:center;
+direction:rtl;
+}
+
+br{
+font-size:0px;
+}
+
+.p{
+font-family:sg;
+
+}
+
+.p1{
+font-size:30px;
+color:green;
+text-shadow:0px 0px 4px gray;
+}
+
+.p6{
+font-family:gen;
+font-size:15px;
+text-shadow:0px 0px 9px #eaffff;
+
+}
+ .p5{
+border:groove 5px #707070;
+border-radius:30px 5px;
+padding:10px;
+}
+
+.p4{
+font-family:cas;
+font-size:19px;
+text-shadow:1px 1px 3px gray;
+color:black;
+}
+
+#img {
+      height: 64px;
+      width: 64px;
+      text-align: left;
+pointer-events:none;
+
+    }
+
+#loader2 {
+      background-color: transparent;
+      border-color:transparent;
+box-shadow:3px 3px 3px ;
+border-radius:10%;
+    }
+
+.rotate2 {
+      animation: rotation 0.35s infinite linear;
+text-align:left;
+}
+
+@keyframes rotation {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+
+
+</style>
+
+<script>
+function load2(element) {
+       document.getElementById('loader2').style.boxShadow ="none";
+ document.getElementById('loader2').innerHTML = document.getElementById('div2').innerHTML;
+  
+      }
+</script>
+</head>
+<body> 
+<!-- div:c -->
+<div class="c">
+<br>
+<br>
+<!-- p.p -->
+<p class="p">
+همم أنت ذكي كما توقعت، إذن... 
+<br>
+<!-- span.p1 -->
+<span class="p1">
+فالنبدأ!!
+</span>
+</p>
+<br>
+<br>
+<br>
+<!-- p.p3 -->
+<p class="p3">
+<!-- span.p4 -->
+<span class="p4">
+القصة الأولى:
+</span>
+<br>
+<!-- p.p5 -->
+<div class="p5">
+<!-- span.p6 -->
+<span class="p6">
+كان ياما كان في قديم الزمان... كان هنالك طالبٌ يدعى ”حمزه“؛
+حمزه يحب الدراسة كثيرًا ومن المواد اللتي كان يحب الرياضيات، ولكن كان معلم الرياضيات صديق والد حمزه في الدراسة قديمًا.. وكان يكره والد حمزة وبالتالي هو يكره حمزه وهو يضربه غالبًا بشكل يومي بلا سبب، فكّر حمزه في الاتصال بالشرطة ولكنه تردد.. فهل 
+<span style="color:green;">
+يتصل
+</span>
+ أم 
+<span style="color:red;">
+لا
+</span>
+؟
+</span>
+</div>
+</p>
+
+
+
+<p>ستتم تكملة العمل قريبًا.. بإذن الله..</p>
+
+
+</div>
+<br>
+<br>
+<br>
+<br>
+<!-- loader2 -->
+<div id="div2" style="display:none;">
+      <img src=" loader2.png" alt="" height="45px" width="45px" class="rotate2" style="padding-right:10px; padding-left:10px; padding-top: 10px; padding-bottom: 10px;">
+    </div>
+<!-- back button -->
+<a href=" checking stage.html">
+    <button id="loader2" onclick="load2()">
+      <img src=" Back.png" alt="Back" id="img">
+    </button></a>
+
+
+</body>
+</html>
